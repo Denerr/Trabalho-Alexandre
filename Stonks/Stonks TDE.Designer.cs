@@ -320,6 +320,7 @@
             this.txtTelefone.Size = new System.Drawing.Size(198, 20);
             this.txtTelefone.TabIndex = 23;
             this.txtTelefone.TextChanged += new System.EventHandler(this.txtTelefone_TextChanged);
+            this.txtTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefone_KeyPress);
             // 
             // label3
             // 

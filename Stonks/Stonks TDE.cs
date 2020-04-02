@@ -95,6 +95,8 @@ namespace Stonks
             txtTelefone.ResetText();
             txtCidade.ResetText();
             txtBairro.ResetText();
+            rdbMasculino.Checked = false;
+            rbdFeminino.Checked = false;
 
             MessageBox.Show("Formulário Resetado!!"+"\n");
             MessageBox.Show("NOT STONKS =(");
@@ -127,7 +129,15 @@ namespace Stonks
 
         private void txtTelefone_TextChanged(object sender, EventArgs e)
         {
+            txtTelefone.MaxLength=(11);
+        }
 
+        private void txtTelefone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar)&& e.KeyChar !=8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
