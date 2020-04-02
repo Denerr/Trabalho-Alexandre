@@ -47,6 +47,9 @@
             this.txtCpf = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.rdbMasculino = new System.Windows.Forms.RadioButton();
+            this.rbdFeminino = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNome
@@ -265,6 +268,49 @@
             this.txtEmail.TabIndex = 19;
             this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
+            // rdbMasculino
+            // 
+            this.rdbMasculino.AutoSize = true;
+            this.rdbMasculino.BackColor = System.Drawing.Color.Transparent;
+            this.rdbMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbMasculino.ForeColor = System.Drawing.Color.White;
+            this.rdbMasculino.Location = new System.Drawing.Point(37, 389);
+            this.rdbMasculino.Name = "rdbMasculino";
+            this.rdbMasculino.Size = new System.Drawing.Size(107, 24);
+            this.rdbMasculino.TabIndex = 20;
+            this.rdbMasculino.TabStop = true;
+            this.rdbMasculino.Text = "Masculino";
+            this.rdbMasculino.UseVisualStyleBackColor = false;
+            this.rdbMasculino.CheckedChanged += new System.EventHandler(this.rdbMasculino_CheckedChanged);
+            // 
+            // rbdFeminino
+            // 
+            this.rbdFeminino.AutoSize = true;
+            this.rbdFeminino.BackColor = System.Drawing.Color.Transparent;
+            this.rbdFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbdFeminino.ForeColor = System.Drawing.Color.White;
+            this.rbdFeminino.Location = new System.Drawing.Point(160, 389);
+            this.rbdFeminino.Name = "rbdFeminino";
+            this.rbdFeminino.Size = new System.Drawing.Size(100, 24);
+            this.rbdFeminino.TabIndex = 21;
+            this.rbdFeminino.TabStop = true;
+            this.rbdFeminino.Text = "Feminino";
+            this.rbdFeminino.UseVisualStyleBackColor = false;
+            this.rbdFeminino.CheckedChanged += new System.EventHandler(this.rbdFeminino_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(33, 361);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Sexo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -272,6 +318,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.rbdFeminino);
+            this.Controls.Add(this.rdbMasculino);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCpf);
@@ -318,6 +367,9 @@
         private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.RadioButton rdbMasculino;
+        private System.Windows.Forms.RadioButton rbdFeminino;
+        private System.Windows.Forms.Label label2;
     }
 }
 

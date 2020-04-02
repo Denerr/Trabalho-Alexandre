@@ -16,6 +16,7 @@ namespace Stonks
         {
             InitializeComponent();
         }
+        string genero;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -59,10 +60,20 @@ namespace Stonks
 
         private void btnStonks_Click(object sender, EventArgs e)
         {
+            if(rdbMasculino.Checked)
+            {
+                genero = "Masculino";
+            }
+            else
+            {
+                genero = "Feminino";
+            }
+
             String mensagem = "";
             mensagem += "Nome: " + txtNome.Text + " " + txtSobrenome.Text + "\n";
             mensagem += "CPF:  " + txtCpf.Text + "\n";
             mensagem += "CEP:  " + txtCep.Text + "\n";
+            mensagem += "Sexo: " + genero + "\n";
             mensagem += "Cidade:  " + txtCidade.Text + "\n";
             mensagem += "Bairro:  " + txtBairro.Text + "\n";
             mensagem += "Estado:  " + cmbEstado.Text + "\n";
@@ -93,6 +104,21 @@ namespace Stonks
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbMasculino_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbdFeminino_CheckedChanged(object sender, EventArgs e)
         {
 
         }
