@@ -52,6 +52,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mtbNascimento = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblNome
@@ -334,6 +336,30 @@
             this.label3.TabIndex = 24;
             this.label3.Text = "Telefone";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(278, 348);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(172, 20);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Data de Nascimento";
+            // 
+            // mtbNascimento
+            // 
+            this.mtbNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbNascimento.Location = new System.Drawing.Point(300, 371);
+            this.mtbNascimento.Mask = "00/00/0000";
+            this.mtbNascimento.Name = "mtbNascimento";
+            this.mtbNascimento.Size = new System.Drawing.Size(139, 22);
+            this.mtbNascimento.TabIndex = 28;
+            this.mtbNascimento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mtbNascimento.ValidatingType = typeof(System.DateTime);
+            this.mtbNascimento.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtbNascimento_MaskInputRejected);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -341,6 +367,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mtbNascimento);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label2);
@@ -397,6 +425,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox mtbNascimento;
     }
 }
 

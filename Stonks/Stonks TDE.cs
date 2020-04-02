@@ -74,6 +74,7 @@ namespace Stonks
             mensagem += "CPF:  " + txtCpf.Text + "\n";
             mensagem += "CEP:  " + txtCep.Text + "\n";
             mensagem += "Sexo: " + genero + "\n";
+            mensagem += "Data de Nascimento: " + mtbNascimento.Text + "\n";
             mensagem += "Telefone: " + txtTelefone.Text + "\n";
             mensagem += "Cidade:  " + txtCidade.Text + "\n";
             mensagem += "Bairro:  " + txtBairro.Text + "\n";
@@ -92,6 +93,7 @@ namespace Stonks
             cmbEstado.SelectedIndex = -1;
             txtCpf.ResetText();
             txtCep.ResetText();
+            mtbNascimento.ResetText();
             txtTelefone.ResetText();
             txtCidade.ResetText();
             txtBairro.ResetText();
@@ -138,6 +140,10 @@ namespace Stonks
             {
                 e.Handled = true;
             }
+        }
+        private void mtbNascimento_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
