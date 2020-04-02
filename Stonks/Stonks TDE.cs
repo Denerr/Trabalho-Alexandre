@@ -74,6 +74,7 @@ namespace Stonks
             mensagem += "CPF:  " + txtCpf.Text + "\n";
             mensagem += "CEP:  " + txtCep.Text + "\n";
             mensagem += "Sexo: " + genero + "\n";
+            mensagem += "Telefone: " + txtTelefone.Text + "\n";
             mensagem += "Cidade:  " + txtCidade.Text + "\n";
             mensagem += "Bairro:  " + txtBairro.Text + "\n";
             mensagem += "Estado:  " + cmbEstado.Text + "\n";
@@ -91,6 +92,7 @@ namespace Stonks
             cmbEstado.SelectedIndex = -1;
             txtCpf.ResetText();
             txtCep.ResetText();
+            txtTelefone.ResetText();
             txtCidade.ResetText();
             txtBairro.ResetText();
 
@@ -119,6 +121,11 @@ namespace Stonks
         }
 
         private void rbdFeminino_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
         {
 
         }
