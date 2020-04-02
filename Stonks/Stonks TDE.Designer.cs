@@ -351,7 +351,7 @@
             // mtbNascimento
             // 
             this.mtbNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbNascimento.Location = new System.Drawing.Point(300, 371);
+            this.mtbNascimento.Location = new System.Drawing.Point(297, 371);
             this.mtbNascimento.Mask = "00/00/0000";
             this.mtbNascimento.Name = "mtbNascimento";
             this.mtbNascimento.Size = new System.Drawing.Size(139, 22);
